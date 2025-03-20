@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>99Acres Clone - Find Your Dream Property</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">99Acres Clone</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Sell</a></li>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Find Your Dream Property</h1>
+        <p>Discover the best properties across India with ease.</p>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter city, locality, or project">
+            <button onclick="searchProperties()">Search</button>
+        </div>
+    </section>
+
+    <section class="cartoon-section">
+        <h2>Inspirational Real Estate Quotes</h2>
+        <div class="cartoon-container">
+            <div class="cartoon">
+                <img src="cartoon1.png" alt="Cartoon 1">
+                <p>"A house is made of bricks and beams. A home is made of hopes and dreams."</p>
+            </div>
+            <div class="cartoon">
+                <img src="cartoon2.png" alt="Cartoon 2">
+                <p>"Owning a home is a keystone of wealth... both financial affluence and emotional security."</p>
+            </div>
+            <div class="cartoon">
+                <img src="data:image/jpeg;base64,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" alt="Cartoon 3">
+                <p>"Don't wait to buy real estate. Buy real estate and wait."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <p>We provide the best real estate options tailored to your needs.</p>
+        <ul >
+            <li>✅ Wide range of properties across India</li>
+            <li>✅ Verified listings with high accuracy</li>
+            <li>✅ 24/7 customer support</li>
+            <li>✅ Affordable pricing and exclusive deals</li>
+            <li>✅ Easy home loan assistance</li>
+            <li>✅ Virtual tours of properties</li>
+        </ul>
+    </section>
+
+    <section class="customer-testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"I found my dream home with ease! The process was seamless and hassle-free."</p>
+            <strong>- Rajesh Sharma</strong>
+        </div>
+        <div class="testimonial">
+            <p>"Great customer service and an excellent range of properties! Highly recommended."</p>
+            <strong>- Priya Mehta</strong>
+        </div>
+        <div class="testimonial">
+            <p>"I never imagined buying a house would be this easy! The search filters helped a lot."</p>
+            <strong>- Ankit Verma</strong>
+        </div>
+    </section>
+
+    <section class="real-estate-guide">
+        <h2>Real Estate Buying Guide</h2>
+        <p>New to real estate? Here’s everything you need to know.</p>
+        <ul>
+            <li>🏡 How to choose the right property?</li>
+            <li>💰 Understanding home loans and financing options.</li>
+            <li>📜 Legal aspects of property buying.</li>
+            <li>📊 Market trends and price analysis.</li>
+            <li>🛠 Home renovation and maintenance tips.</li>
+        </ul>
+    </section>
+
+    <section class="blog">
+        <h2>Latest Real Estate News & Trends</h2>
+        <article>
+            <h3>Housing Market Trends in 2025</h3>
+            <p>Discover the latest shifts in real estate pricing and demand across major cities.</p>
+            <a href="#">Read More</a>
+        </article>
+        <article>
+            <h3>Best Locations to Invest in India</h3>
+            <p>Find out which cities are offering the best real estate investment opportunities.</p>
+            <a href="#">Read More</a>
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 99Acres Clone. All rights reserved.</p>
+    </footer>
+</body>
+</html>
